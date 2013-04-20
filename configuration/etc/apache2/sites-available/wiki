@@ -1,0 +1,56 @@
+<VirtualHost *:80>
+        ServerAdmin it@freesideatlanta.org
+        ServerName wiki-beta.freesideatlanta.org
+        
+        DocumentRoot /srv/wiki
+        <Directory />
+                Options FollowSymLinks
+                AllowOverride None
+        </Directory>
+        <Directory /srv/wiki>
+                Options Indexes FollowSymLinks MultiViews ExecCGI
+                AllowOverride None
+		RewriteEngine On
+		RewriteRule ^/?fs(/.*)?$ %{DOCUMENT_ROOT}/index.php [L]
+
+		RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+		RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-d
+		RewriteRule ^/?images/thumb/[0-9a-f]/[0-9a-f][0-9a-f]/([^/]+)/([0-9]+)px-.*$ %{DOCUMENT_ROOT}/thumb.php?f=$1&width=$2 [L,QSA,B]
+
+		RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+		RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-d
+		RewriteRule ^/?images/thumb/archive/[0-9a-f]/[0-9a-f][0-9a-f]/([^/]+)/([0-9]+)px-.*$ %{DOCUMENT_ROOT}/thumb.php?f=$1&width=$2&archived=1 [L,QSA,B]
+                Order allow,deny
+                allow from all
+        </Directory>
+        <Directory /srv/wiki/images>
+                Options -Indexes
+        </Directory>
+
+        ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+        <Directory "/usr/lib/cgi-bin">
+                AllowOverride None
+                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+                Order allow,deny
+                Allow from all
+        </Directory>
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+
+        # Possible values include: debug, info, notice, warn, error, crit,
+        # alert, emerg.
+        LogLevel warn
+
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+    Alias /doc/ "/usr/share/doc/"
+    <Directory "/usr/share/doc/">
+        Options Indexes MultiViews FollowSymLinks
+        AllowOverride None
+        Order deny,allow
+        Deny from all
+        Allow from 127.0.0.0/255.0.0.0 ::1/128
+    </Directory>
+
+</VirtualHost>
+
