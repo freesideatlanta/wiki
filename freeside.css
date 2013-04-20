@@ -1,0 +1,265 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 11:38:47 Jan 20, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:15:14 Feb 28, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+ * Stylesheet for http://www.freesideatl.org
+ *
+ * Author: dknowles2@gmail.com
+ */
+
+body {
+  background-color: #f0f0f0;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 79%;
+  margin: 1em 2em;
+}
+
+a, .lk, .l {
+  color: #00c;
+  color: #00a8ff;
+  color: #0096e3;
+}
+
+a:hover,
+.lk:hover,
+.l:hover {
+  color: #00f;
+  color: #116fa1;
+}
+
+#about,
+#Text1 {
+  -moz-border-radius: 1.2em;
+  -webkit-border-radius: 1.2em;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
+#about h2,
+#Text1 h2 {
+  border: 0;
+  color: #000;
+  font-size: 1.2em;
+  margin: 0;
+  text-transform: none;
+}
+
+#Text1.widget-content {
+  color: #000;
+}
+
+.Text .widget-content {
+  color: #000;
+}
+
+.Text h2 {
+}
+
+
+#articles {
+  margin: 1em;
+}
+
+#Blog1 {
+  padding-left: 1em;
+}
+
+#calendar {
+  border: 0;
+  height: 20em;
+  width: 100%;
+}
+
+#container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1em;
+  vertical-align: middle;
+}
+
+#content {
+  float: left;
+  padding-right: 260px;
+  padding-top: 1em;
+  position: relative;
+}
+
+#footer {
+  clear: both;
+  color: #666;
+  margin: 2em;
+  text-align: center;
+}
+
+#header {
+  border-bottom: 1px solid #ccc;
+  margin-top: -1em;
+}
+
+#header h1 {
+  margin: 1em 0 0 0;
+}
+
+#header h2 {
+  color: #777;
+  font-size: 1.3em;
+  font-style: italic;
+  font-weight: normal;
+  margin: 0;
+}
+
+#header-content {
+  padding: 2em 0;
+  position: relative;
+}
+
+#logo-container {
+  float: left;
+  margin-bottom: -2em;
+  position: relative;
+}
+
+#logo {
+  border: 0;
+  height: 190px;
+  width: 200px;
+}
+
+#main-wrapper {
+  float: left;
+  position: relative;
+  width: 100%;
+}
+
+#main {
+  float: left;
+  padding-right: 2em;
+}
+
+#sidebar-wrapper {
+  float: left;
+  margin-right: -260px;
+  position: relative;
+  width: 240px;
+}
+
+#sidebar {
+  float: left;
+}
+
+#top-nav {
+  float: left;
+  font-size: 1.2em;
+  margin: 2em 0 0 0;
+  padding: 0;
+}
+
+#top-nav li {
+  float: left;
+  font-weight: bold;
+  list-style-type: none;
+  padding: 0 1em 0 0;
+}
+
+.article,
+.post {
+  margin-bottom: 3em;
+}
+
+.article h2,
+.post h3,
+.post h3 a {
+  color: #b70000;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.post-body {
+  margin: 1em 0;
+}
+
+.post-header-line-1 {
+  color: #666;
+  font-size: 0.9em;
+  font-style:italic;
+}
+
+.article-author {
+  color: #666;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.article-content {
+  margin: 1em 0;
+}
+
+.article-footer {
+  font-size: 0.9em;
+}
+
+.box,
+.widget {
+  margin-bottom: 2em;
+}
+
+.box h2,
+.widget h2 {
+  border-bottom: 1px solid #ccc;
+  color: #777;
+  font-size: 1em;
+  margin: 0 0 0.25em 0;
+  padding-bottom: 0.25em;
+  text-transform: uppercase;
+}
+
+.box h2 a,
+.widget h2 a {
+  text-decoration: none;
+}
+
+.box h2 a:hover,
+.widget h2 a:hover {
+  text-decoration: underline;
+}
+
+.box ul,
+.widget ul {
+  margin: 1em 0;
+  padding: 0 0 0 2em;
+}
+
+.box-content,
+.widget-content {
+  color: #666;
+  margin: 1em 0;
+}
+
+.hacky-full-div,
+.clear {
+  clear: both;
+}
+
+#Feed1 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#Feed1 li {
+  margin: 0.5em 0;
+  padding: 0;
+}
